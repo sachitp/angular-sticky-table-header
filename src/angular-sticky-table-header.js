@@ -146,7 +146,7 @@ angular
 						scope.setStuck(false);
 					}
 
-					scope.clone.css('left', scope.offset.left - scrollX);
+					scope.clone.css('top', ($window.pageYOffset || 0) - scope.offset.top);
 
 				}),
 
