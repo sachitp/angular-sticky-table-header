@@ -76,7 +76,6 @@ angular.module('turn/stickyTableHeader', ['watchDom']).value('stickyTableHeaderO
           }),
           setCloneGutter: ifClone(function () {
             scope.clone.css({
-              left: scope.offset.left,
               width: scope.offset.width
             });
           }),

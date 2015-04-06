@@ -185,12 +185,11 @@ describe 'angular-sticky-table-header', ->
 
 	describe '#setCloneGutter', ->
 
-		it 'should set the <th> clone\'s left and width CSS equal to scope.offset', ->
+		it 'should set the <th> clone\'s width CSS equal to scope.offset', ->
 
 			@scope.clone =
 				css: ->
 			@scope.offset =
-				left: 1
 				width: 2
 
 			spyOn @scope.clone, 'css'
